@@ -1,56 +1,81 @@
 // src/components/Header.js
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
+    const [isOpen, setIsOpen] = useState(false);
 
-    // Función para alternar el estado del menú
-    const toggleMenu = () => setMenuOpen(!menuOpen);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
-        <header className="bg-orange-500 text-white p-4">
+        <header className="bg-blue-600 text-white shadow-md p-4">
             <div className="flex items-center justify-between">
                 {/* Logo y Nombre de la Empresa */}
-                <div className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="h-10" /> {/* Ruta del logo */}
-                    <div className="ml-4">
-                        <h1 className="text-xl font-bold">MDV&SCLL</h1>
-                        <p className="text-sm italic">Soluciones para la inclusión y bienestar</p>
+                <div className="flex items-center space-x-4">
+                    <img src="ruta-del-logo.png" alt="Logo" className="h-10 w-10" />
+                    <div className="text-left">
+                        <h1 className="text-lg font-bold">MDV&SCLL</h1>
+                        <p className="text-sm italic">Centro de Apoyo para Personas con Discapacidad</p>
                     </div>
                 </div>
 
-                {/* Menú de navegación para pantallas grandes */}
-                <div className="hidden md:flex space-x-4">
-                    <Link to="/" className="text-white">Inicio</Link>
-                    <Link to="/servicios" className="text-white">Servicios</Link>
-                    <Link to="/calidad" className="text-white">Calidad y Compromiso</Link>
-                    <Link to="/blog" className="text-white">Blog</Link>
-                    <Link to="/contacto" className="text-white">Contacto</Link>
-                    <Link to="/formulario" className="text-white">Formulario</Link>
-                </div>
+                {/* Botón de menú hamburguesa */}
+                <button
+                    onClick={toggleMenu}
+                    className="block md:hidden focus:outline-none ml-auto"
+                >
+                    <svg
+                        className="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
 
-                {/* Botón de menú hamburguesa para pantallas pequeñas */}
-                <div className="md:hidden">
-                    <button onClick={toggleMenu}>
-                        <img src="/hamburger-icon.png" alt="Menú" className="w-6 h-6" /> {/* Imagen de menú hamburguesa */}
-                    </button>
-                </div>
-            </div>
-
-            {/* Menú desplegable para pantallas pequeñas */}
-            {menuOpen && (
-                <nav className="md:hidden mt-4 bg-orange-500">
-                    <ul className="space-y-2 px-4">
-                        <li><Link to="/" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
-                        <li><Link to="/servicios" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Servicios</Link></li>
-                        <li><Link to="/calidad" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Calidad y Compromiso</Link></li>
-                        <li><Link to="/blog" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Blog</Link></li>
-                        <li><Link to="/contacto" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
-                        <li><Link to="/formulario" className="text-white block p-2" onClick={() => setMenuOpen(false)}>Formulario</Link></li>
+                {/* Menú de navegación */}
+                <nav
+                    className={`${isOpen ? "block" : "hidden"
+                        } absolute top-16 right-4 bg-white text-gray-800 shadow-md rounded-md md:block md:relative md:top-0 md:right-0 md:shadow-none`}
+                >
+                    <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 md:items-center">
+                        <li>
+                            <Link to="/" className="hover:text-blue-300">
+                                Inicio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/servicios" className="hover:text-blue-300">
+                                Servicios
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/calidad" className="hover:text-blue-300">
+                                Conformidad y Calidad
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/blog" className="hover:text-blue-300">
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contacto" className="hover:text-blue-300">
+                                Contacto
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
-            )}
+            </div>
         </header>
     );
 };
