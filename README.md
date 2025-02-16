@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](client/public/info/image.png)
 
 ## Alumno
 ### Edison Nicolas Guamialama Haro
@@ -119,12 +119,12 @@ export default Footer;
 ```
 
 varios tipos de presentacioness
-![alt text](image-4.png)
-![pagvermovil](image-12.png)
-![pagver3](image-7.png)
-![alt text](image-6.png)
-![alt text](image-3.png)
-![home](image-8.png)
+![alt text](client/public/info/image-4.png)
+![pagvermovil](client/public/info/image-12.png)
+![pagver3](client/public/info/image-7.png)
+![alt text](client/public/info/image-6.png)
+![alt text](client/public/info/image-3.png)
+![home](client/public/info/image-8.png)
 
 
 se realizó las pruebas dando click en el botón de "conocer más"  redirige al formulario visitas  
@@ -133,37 +133,37 @@ se realizó las pruebas dando click en el botón de "conocer más"  redirige al 
 
  ### Estructura del sitio web
   
-![Estructura1](Estrc1.png)
-![Estructura2](Estrc2.png)
-![Estructura3](Estrc2.png)
+![Estructura1](client/public/info/Estrc1.png)
+![Estructura2](client/public/info/Estrc2.png)
+![Estructura3](client/public/info/Estrc2.png)
 
 
 ## Formulario de visitas 
 
-![Form-visitas](image-2.png)
+![Form-visitas](client/public/info/image-2.png)
 
   se ingresa todos los campos requeridos y son obligatorios todos  al enviar  se verifica
 
 
-![comfirmacion](image-5.png)
+![comfirmacion](client/public/info/image-5.png)
 
 ### Pagina Servicios
 la siguiente página la lógica es un tanto diferente  ya que  tiene una descripción breve de nuestros servicios  y dos secciones Profesionales  contiene cuatro  contenedores los cuales cada semana  la cinta se actualiza automáticamente   y Transporte (conductores) dispone de dos  contenedores  donde se muestra una descripción del profesional del volante  de igual manera con cinta de actualización  automática cada cinco días 
-![Servicios](Servicios.png)
+![Servicios](client/public/info/Servicios.png)
 
 dispone de tres enlaces para actualizar más profesionales o  conductores  estos redirige  a un  modal de contraseña  para que personal no autorizado ingrese 
-![Modal](Psswd.png)
+![Modal](client/public/info/Psswd.png)
 ![Formulario](Form1.png)
 este botón al dar click redirige a un formulario residentes este no dispone de contraseña para que todo el personal pueda ingresar  un formulario 
-![Formulario](Rsdnt.png)
+![Formulario](client/public/info/Rsdnt.png)
 
 estas intercacciones con los formularios al momento de enviar , Guardar , Actualizar  se guardan en una base de datos 
 que en la base de batos  se almacena sin ningun inconveniente 
-![db1](image-1.png)
+![db1](client/public/info/image-1.png)
 
   de igual manera se verifica en Postman lo propio con Get y la dirección verificando que si muestra la acción del formulario
 
-![Postman](image-9.png)
+![Postman](client/public/info/image-9.png)
 
 verificado y constatado que está funcionando correctamente a satisfacción temporal  de mi tutor empresarial 
 
@@ -191,8 +191,8 @@ Compromiso con la mejora continua de los servicios a través de la retroalimenta
 Los certificados de Acreditacion son documentos que  respaldan el procceso de la escencia de la Empresa  , el compromiso  con los  usuarios y  el respaldo de las empresas gubernamentales 
 esto se mide por mendio de impacto de calidad 
 
-![Calidad1](Calidad1.png)
-![Calidad2](Calidad2.png)
+![Calidad1](client/public/info/Calidad1.png)
+![Calidad2](client/public/info/Calidad2.png)
 
 este  cuadro estadistico se actualiza  cada ves que se obtiene mas informacion 
 
@@ -206,8 +206,8 @@ Enfoque en el Usuario: Describe cómo la calidad está centrada en la experienci
 Compromiso con la Ética: Habla sobre la ética profesional en la empresa.
 Transparencia y Mejora Continua: Menciona el compromiso con la mejora constante y cómo mantienen informados a los usuarios sobre sus avances.
 
-![Conformidad](confrm1.png)
-![Conformidad](confrm2.png)
+![Conformidad](client/public/info/confrm1.png)
+![Conformidad](client/public/info/confrm2.png)
 Contacto.js: Agrega un formulario de contacto.
 Testimonios.js: Agrega testimonios dinámicos.
 Satisfaccion.js: Muestra un gráfico de satisfacción.
@@ -245,7 +245,7 @@ Paginación: para que el usuario pueda navegar fácilmente entre artículos.
 Etiquetas: Los artículos pueden tener etiquetas como "Familias", "Educación", "Inclusión", "Historias de Éxito" para ayudar a la clasificación.
 Comentarios: permitir que los lectores comenten en los artículos (si es apropiado para tu enfoque) puede generar interacción y fortalecer la comunidad.
 
-![Blog](blog.png)
+![Blog](client/public/info/blog.png)
 
 
 Encabezado y descripción: Un título profesional y una pequeña introducción sobre lo que los usuarios pueden encontrar en el blog.
@@ -315,9 +315,9 @@ Open Graph y Twitter Cards: Puedes usar herramientas como el Facebook Sharing De
 
 ### Padina Contacto
 
-![map1](map1.png)
-![map2](map2.png)
-![map3](map3.png)
+![map1](client/public/info/map1.png)
+![map2](client/public/info/map2.png)
+![map3](client/public/info/map3.png)
 
 
 
